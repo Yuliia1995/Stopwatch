@@ -1,0 +1,119 @@
+*,*::before,*::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background: bottom no-repeat url(runners_bg.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    height:100%;
+  }
+    
+  .wrapper {
+    width: 80vw;
+    height:50vh;
+    margin: 100px auto;
+    color:white;
+    text-align:center;
+    border:1px solid white;
+    border-radius:100%;
+    background-color: rgba(51,51,51, .6);
+  }
+  .wrapper p {
+    font-size:3em;
+  }
+  
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 100;
+    font-size: 2.6em;
+    text-transform: uppercase;
+    margin-bottom:50px;
+  }
+  
+  #seconds, #tens, #minutes{
+    font-size:2em;
+  }
+  
+  button{
+      border-radius: 5px;
+      background:rgb(51,51,51);
+      color:white;
+      border: solid 1px white;
+      text-decoration:none;
+      cursor:pointer;
+      font-size:1.2em;
+      padding:18px 10px;
+      width:180px;
+      margin: 10px;
+      outline: none;
+  }
+  button:hover{
+      transition: all ease .5s;
+      background:white;
+      border: solid 1px white;
+      color:black;
+      }
+  
+  #lap-container {
+    width:80%;
+    height:50vh;
+    margin:20px auto;
+    padding:20px;
+    border:1px solid white;
+    font-size:18px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    background-color: rgba(51,51,51, .6);
+  }
+
+  #lap-container p {
+      line-height: 200%;
+  }
+
+  #hasStarted  {
+    display:none;
+  }
+  
+  .button-container {
+    display:flex;
+    
+    width:70vw;
+    margin:30px auto;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+  }
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        border:none;
+        border-radius: 0px;
+        width:100vw;
+        margin: 30px auto;
+    }
+    .wrapper p {
+        font-size: 2em;
+    }
+    .button-container {
+        width:100vw;
+        padding:0;
+
+    }
+    button {
+        width:42%; 
+        margin:5px;
+
+    }
+    #lap-container {
+        width:100vw;
+        border:none;
+        border-top:1px solid white;
+    }
+
+}
